@@ -34,12 +34,12 @@ let NombreHmax;
 let BanderadelprimeroAdol = "es el primero";
 let Nomadolescente;
 
-sexo = prompt("Ingrese su sexo: M o H");
-altura = parseInt(prompt("Ingrese su altura en centìmetros"));
-edad = parseInt(prompt("Ingrese su Edad"));
-nombre = prompt("Ingrese su nombre");
-
 do {
+	sexo = prompt("Ingrese su sexo: M o H");
+	altura = parseInt(prompt("Ingrese su altura en centìmetros"));
+	edad = parseInt(prompt("Ingrese su Edad"));
+	nombre = prompt("Ingrese su nombre");
+
 	switch (sexo) {
 		case "M":
 
