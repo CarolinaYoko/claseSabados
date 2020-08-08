@@ -42,11 +42,14 @@ do {
 
 	switch (sexo) {
 		case "M":
+			alert("ingresaste M");
 
 			if (BanderadelprimeroMaltura == "es el primero") {
-				BanderadelprimeroMaltura == "ya paso";
+				BanderadelprimeroMaltura = "ya paso";
 				AlturaMmax = altura;
 				NombreMmax = nombre;
+
+				
 			} else {
 				if (altura > AlturaMmax) {
 					AlturaMmax = altura;
@@ -57,7 +60,7 @@ do {
 
 		case "H":
 			if (BanderadelprimeroHedad == "es el primero") {
-				BanderadelprimeroHedad == "ya paso";
+				BanderadelprimeroHedad = "ya paso";
 				EdadHmax = edad;
 				NombreHmax = nombre;
 			} else {
@@ -70,8 +73,9 @@ do {
 
 	}
 
-	if (edad > 12 && edad < 18 && BanderadelprimeroAdol == "es el primero") {
-		BanderadelprimeroAdol == "ya paso";
+	if (BanderadelprimeroAdol == "es el primero" && (edad > 12 && edad < 18)) 
+	{
+		BanderadelprimeroAdol = "ya paso";
 		Nomadolescente = nombre;
 	}
 
